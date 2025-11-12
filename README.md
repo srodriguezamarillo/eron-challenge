@@ -10,8 +10,9 @@
 ```
 
 ## Tech Stack
-- Java 17, Spring Boot 3.x (Spring MVC)
-- `RestClient` (blocking HTTP client, Spring 6)
+- Java 17
+- Spring Boot 3.4.4 (Spring MVC, Spring Framework 6.x)
+- RestClient (blocking HTTP client, Spring 6)
 - Gradle
 
 ## How to Run
