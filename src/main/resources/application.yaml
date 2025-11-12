@@ -1,0 +1,10 @@
+server:
+    port: 8080
+
+app:
+    moviesApi:
+        baseUrl: 'https://wiremock.dev.eroninternational.com/api/movies/search'
+    http:
+        connectTimeoutMs: 3000
+        readTimeoutMs: 5000
+        maxRetries: 0
