@@ -31,6 +31,9 @@ Query the endpoint:
 curl "http://localhost:8080/api/directors?threshold=4"
 ```
 
+Quick demo:
+- Open http://localhost:8080/ on browser for simple HTML
+
 ## Configuration
 Edit `src/main/resources/application.yaml`:
 ```yaml
@@ -87,6 +90,7 @@ flowchart TD
 - **Readable error handling:** @ControllerAdvice maps upstream failures to 502 and unexpected errors to 500.
 
 - **Unit tests:**
+    - DirectorsControllerTest: standalone MVC test of the HTTP contract (OK path + negative threshold → 400 without calling service).
 
     - DirectorsServiceTest: verifies counting, strict threshold, and alphabetical ordering with a fake API client.
 
